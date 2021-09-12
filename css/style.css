@@ -15,24 +15,115 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  
-}
+	/* :root {
+
+	} */
 
 /*BODY*/
-	body{
-
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+		background-color: #00002e;
+		color: #fff;
 	}
 
 /*TOPO*/
-	header.topo{
+	/* header.topo { */
 		
-	}
+	/* } */
 
 /*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	div.pg-home {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+	}
+
+	div.pg-home header {
+		margin-bottom: 24px;
+		font-size: 1.8rem;
+		font-weight: 620;
+	}
+	
+	figure figcaption {
+		display: none;
+	}
+	
+	div.pg-home ul {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.pg-home ul li {
+		display: flex;
+		list-style: none;
+		flex-direction: column;
+		cursor: pointer;
+		margin: 12px 0px 30px 0px;
+		width: 185px;
+	}
+	
+	.pg-home ul li h3 {
+		font-size: 17px;
+		font-weight: bold;
+		padding: 12px;
+	}
+
+	section {
+		display: flex;
+		width: auto;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-direction: column;	
+	}
+
+	button {
+		background-color: #00002e;
+		color: #fff;
+		width: 60vw ;
+		height: 60px;
+		border: solid 1px white;
+		max-width: 300px;
+		border-radius: 5px;
+		margin: 22px;
+	}
+
+	button:hover {
+		border: solid 1px #00002e;
+		background-color: #fff;
+		color: #00002e;
+	}
+
+	.pg-home ul li img {
+		width: 160px;
+		border: solid 2px #00002e;
+	}
+
+	.pg-home ul li img:hover {
+		border: solid 2px #fff;
+	}
+
+	@media screen and (min-width: 920px){
+
+		div.pg-home ul {
+			width: 950px;
+			justify-content: space-around;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+
+		.pg-home ul li {
+			list-style: none;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
